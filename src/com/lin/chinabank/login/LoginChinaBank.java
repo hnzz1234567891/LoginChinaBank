@@ -9,6 +9,11 @@ import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.WebDriverWait;
 
+/**
+ * 登录中国银行.
+ * @author lin
+ *
+ */
 public class LoginChinaBank {
 	
 	public static final String WEBDRIVER_PATH = "D:/lin/IEDriverServer/chromedriver.exe";
