@@ -38,5 +38,6 @@
 	<classpathentry kind="lib" path="D:/lin/workspace3/LoginChinaBank/xercesImpl-2.11.0.jar"/>
 	<classpathentry kind="lib" path="D:/lin/workspace3/LoginChinaBank/xml-apis-1.4.01.jar"/>
 	<classpathentry kind="lib" path="D:/lin/workspace3/LoginChinaBank/jsoup-1.9.2.jar"/>
+	<classpathentry kind="lib" path="D:/lin/workspace3/LoginChinaBank/tess4j-3.0.0.jar"/>
 	<classpathentry kind="output" path="bin"/>
 </classpath>

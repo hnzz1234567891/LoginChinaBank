@@ -9,6 +9,8 @@ import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.WebDriverWait;
 
+import utils.VerificationCodeUtils;
+
 /**
  * 登录中国银行.
  * @author lin
@@ -85,7 +87,11 @@ public class LoginChinaBank {
 		}catch(Exception e){
 			System.out.println("出现异常，重新输入.等待用户输入验证码.");
 			
-			sleep(10000);//等待用户输入验证码
+			//sleep(10000);//等待用户输入验证码
+			//((RemoteWebDriver)webDriver).executeScript("document.getElementById('')");
+			WebDriverWait wait4 = new WebDriverWait(webDriver,500);
+			wait4.until(ExpectedConditions.presenceOfElementLocated(By.xpath("//*[@id=\"captcha_debitCard\"]")));
+			VerificationCodeUtils.inputVerificationCode(webDriver,webDriver.findElement(By.xpath("//*[@id=\"captcha_debitCard\"]")));
 			
 			/**
 			 * 输入密码
