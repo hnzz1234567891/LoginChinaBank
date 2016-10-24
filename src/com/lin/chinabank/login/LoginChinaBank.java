@@ -22,7 +22,7 @@ public class LoginChinaBank {
 	
 	public static final String LOGIN_URL = "https://ebsnew.boc.cn/boc15/login.html";
 	
-	public static final String LOGIN_ACCOUNT = "6217852000013970218";
+	public static final String LOGIN_ACCOUNT = "6*****************8";
 	
 	public static final String LOGIN_PASSWORD = "662663";
 	
